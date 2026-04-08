@@ -23,7 +23,6 @@ export default function DateCell({
   // isSingle → no strip, just the solid circle below
 
   // Button circle on top of the strip
-  // ✅ rounded-full is in the base so hover on plain days is always a pill
   let btn = "w-10 h-10 flex items-center justify-center text-sm font-semibold transition-all duration-200 rounded-full";
   if (isStart || isEnd || isSingle) btn += " bg-blue-600 text-white shadow-md";
   else if (isInRange)               btn += " text-blue-800 hover:bg-blue-200";
